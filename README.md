@@ -37,13 +37,11 @@ Hay que mencionar que algunos ya estan descomentados
     "moduleResolution": "node", // Tambien esta como: "moduleResolution": "node10", 
     "skipLibCheck": true
 
-  }
-  
-  Nota: Esta parte no se encuentra asi que tendremos que agregarlo de forma manual:
-  ,
+  },
   "ts-node": {
     "files": true
   }
+  Nota: la parte final no se encuentra asi que tendremos que agregarlo de forma manual:
 }
 
 ## Ejecucion
