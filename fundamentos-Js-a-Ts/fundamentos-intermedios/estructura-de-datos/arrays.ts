@@ -1,5 +1,5 @@
 // Las listas son similares a Js solo con pequeñas diferencias
-// Estas listas pueden ser de tipo: string, number y boolean
+// Estas listas pueden ser de tipo: string, number, boolean, etc
 
 // Podemos crear array de dos formas
 // Primera forma:
@@ -28,7 +28,7 @@ console.log(listaVacia1, listaVacia2, listaVacia3);
 console.log('====================================');
 
 // Array de la segunda forma:
-// Igual almacenan datos de acuerdo al tipo, pero tambine pueden
+// Igual almacenan datos de acuerdo al tipo, pero tambien pueden
 // almacenar datos directamente
 
 // Ocupamos espacios directamente, de acuerdo al tipo de dato:
@@ -122,6 +122,49 @@ console.log('====================================');
 
 // Vemos la longitud de la lista:
 console.log('La longitud es de:', lstAnimales.length);
+console.log('====================================');
+
+// Tambien podemos agregar Objetos a las listas:
+type Persona = {nombre: string, edad: number};
+
+const lstPersona: Persona[] = [
+    {nombre: 'Ana', edad: 42},
+    {nombre: 'Pedro', edad: 25},
+    {nombre: 'Carlos', edad: 32},
+];
+console.log(lstPersona);
+console.log('====================================');
+
+// Tambien podemos agregar funciones (Sin parametros):
+const lstAcciones: (()=>void) [] = [
+    ()=> console.log('Hola'),
+    ()=> console.log('Mundo'),
+];
+console.log(lstAcciones[0]());
+console.log(lstAcciones[1]());
+console.log('====================================');
+
+// Tambien funciones con parametros:
+const lstAccionParam: ((num: number)=> number)[] = [
+    (paramNumber) => paramNumber * 2,
+    (paramNumber) => paramNumber + 10,
+];
+console.log('El doble de 10 es:',lstAccionParam[0](10));
+console.log('La suma es:',lstAccionParam[1](90));
+
+
+console.log('====================================');
+
+// Y tambien arrays dentro de arrays:
+const LstMatriz: number[][] = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+];
+console.log(LstMatriz);
+
+
+
 
 
 
