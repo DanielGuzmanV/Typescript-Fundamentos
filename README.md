@@ -4,25 +4,49 @@ Este proyecto contiene ejemplos de fundamentos de TypeScript, desde lo mas basic
 hasta temas ligeramente avanzados. Usamos `ts-node` para ejecutar directamente
 los archivos `.ts`, sin necesidad de compilar a JavaScript.
 
-## Requisitos
+## 🧰 Requisitos
 
-- [Node.js] (https://nodejs.org/) instalado (v18 o superior recomendado)
-- [npm] (https://www.npmjs.com/)
+- [Node.js](https://nodejs.org/) instalado (v18 o superior recomendado)
+- [npm](https://www.npmjs.com/)
 - Git (opcinal, para clonar el repositorio)
+- Antes de comenzar, asegurarse de tener instalados las siguientes herramientas (globalmente) Todo esto en la terminal de VS CODE:
+  `npx tsc --version Version 5.8.3`
+  `npx ts-node --version v10.9.2`
+  Para ambas debe salir la version, si no les sale ir a `Instalacion`
+- Igualmente verificar que tengan las dependencias para trabajar con modulos, tanto para ESM y CommonJs 
+  `npm list --depth=0` 
+
+  Deberias ver algo como:
+  `├── @types/node@22.14.1`
+  `├── ts-node@10.9.2`
+  `└── typescript@5.8.3`
+
+ todo estara correcto (estos seran localmente, solo en el proyecto)
+ y si no los tienen ir a `Instalacion`
 
 ---
 
-## Instalacion
+## ⚙️ Instalacion
 
-Primero creamos el archivo de configuracion de Typescript.
+Instalacion de Typescript globalmente
+- `npm install -g typescript ts-node`
+
+Creamos el archivo de configuracion de Typescript.
 En la terminal pondremos el siguiente comando:
-- `ts -init`
+- `ts --init`
 Esto generara un arhivo llamado `tsconfig.json` que luego configuraremos
 
 Instalaremos `ts-node` globalmente
 - `npm install -g typescript ts-node`
 
-## Configuracion
+Instalar las dependencias localmente para usar los modulos:
+ESM(export e import)
+CommonJS (module.exports y require)
+- `npm install --save-dev typescript ts-node @types/node`
+(Nos creara una carpeta "node_modules" y un "package.lock.json")
+
+
+## 🔧 Configuracion
 
 Ahora configuramos el archivo `tsconfig.json` donde agregaremos o descomentaremos los siguiente:
 
@@ -36,15 +60,17 @@ Hay que mencionar que algunos ya estan descomentados
     "esModuleInterop": true,
     "moduleResolution": "node", // Tambien esta como: "moduleResolution": "node10", 
     "skipLibCheck": true
-
   },
   "ts-node": {
     "files": true
-  }
-  Nota: la parte final no se encuentra asi que tendremos que agregarlo de forma manual:
+  },
+  "include": ["fundamentos-Js-a-Ts/**/*"]
 }
 
-## Ejecucion
+  Nota: "ts-node" y "include" no se encuentra asi que tendremos que agregarlo de forma manual.
+  "include" es para que vea donde estan ubicados los modulos
+
+## 🚀 Ejecucion
 
 Para ejecutar un archivo (.ts) pondremos el siguiente comando en la terminal:
 - `ts-node nombre-del-archivo.ts`
