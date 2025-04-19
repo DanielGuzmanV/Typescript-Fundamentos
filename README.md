@@ -4,12 +4,16 @@ Este proyecto contiene ejemplos de fundamentos de TypeScript, desde lo mas basic
 hasta temas ligeramente avanzados. Usamos `ts-node` para ejecutar directamente
 los archivos `.ts`, sin necesidad de compilar a JavaScript.
 
+---
+
 ## 🧰 Requisitos
 
 - [Node.js](https://nodejs.org/) instalado (v18 o superior recomendado)
 - [npm](https://www.npmjs.com/)
-- Git (opcinal, para clonar el repositorio)
+- Git (opcional, para clonar el repositorio)
 - Antes de comenzar, asegurarse de tener instalados las siguientes herramientas (globalmente) Todo esto en la terminal de VS CODE:
+
+```bash
   `npx tsc --version Version 5.8.3`
   `npx ts-node --version v10.9.2`
   Para ambas debe salir la version, si no les sale ir a `Instalacion`
@@ -24,7 +28,6 @@ los archivos `.ts`, sin necesidad de compilar a JavaScript.
  todo estara correcto (estos seran localmente, solo en el proyecto)
  y si no los tienen ir a `Instalacion`
 
----
 
 ## ⚙️ Instalacion
 
@@ -34,7 +37,7 @@ Instalacion de Typescript globalmente
 Creamos el archivo de configuracion de Typescript.
 En la terminal pondremos el siguiente comando:
 - `ts --init`
-Esto generara un arhivo llamado `tsconfig.json` que luego configuraremos
+Esto generara un archivo llamado `tsconfig.json` que luego configuraremos
 
 Instalaremos `ts-node` globalmente
 - `npm install -g typescript ts-node`
@@ -45,7 +48,7 @@ CommonJS (module.exports y require)
 - `npm install --save-dev typescript ts-node @types/node`
 (Nos creara una carpeta "node_modules" y un "package.lock.json")
 
-
+```md
 ## 🔧 Configuracion
 
 Ahora configuramos el archivo `tsconfig.json` donde agregaremos o descomentaremos los siguiente:
@@ -69,6 +72,8 @@ Hay que mencionar que algunos ya estan descomentados
 
   Nota: "ts-node" y "include" no se encuentra asi que tendremos que agregarlo de forma manual.
   "include" es para que vea donde estan ubicados los modulos
+
+  ---
 
 ## 🚀 Ejecucion
 
