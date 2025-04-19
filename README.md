@@ -27,7 +27,7 @@ los archivos `.ts`, sin necesidad de compilar a JavaScript.
 
  todo estara correcto (estos seran localmente, solo en el proyecto)
  y si no los tienen ir a `Instalacion`
-
+```
 
 ## ⚙️ Instalacion
 
@@ -72,8 +72,9 @@ Hay que mencionar que algunos ya estan descomentados
 
   Nota: "ts-node" y "include" no se encuentra asi que tendremos que agregarlo de forma manual.
   "include" es para que vea donde estan ubicados los modulos
+```
 
-  ---
+---
 
 ## 🚀 Ejecucion
 
