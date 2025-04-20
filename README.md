@@ -36,7 +36,7 @@ Instalacion de Typescript globalmente
 
 Creamos el archivo de configuracion de Typescript.
 En la terminal pondremos el siguiente comando:
-- `ts --init`
+- `tsc --init`
 Esto generara un archivo llamado `tsconfig.json` que luego configuraremos
 
 Instalaremos `ts-node` globalmente
