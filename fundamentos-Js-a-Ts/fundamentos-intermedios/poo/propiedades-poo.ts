@@ -141,18 +141,18 @@ class Usopropiedades5 {
     // private:
     private propNombre: string;
     private propApellido: string;
-
+    
     // "#":
     #propEdad?: number;
     #propCiudad?: string;
-
+    
     constructor(nombre: string, apellido: string, edad?: number, ciudad?: string) {
         this.propNombre = nombre;
         this.propApellido = apellido;
         this.#propEdad = edad;
         this.#propCiudad = ciudad;
     }
-
+    
 }
 
 // Creamos una instancia:
@@ -172,3 +172,69 @@ console.log(datePerson2);
 // console.log(datePerson2.propCiudad)
 
 // Como vemos no nos dejara acceder porque son privadas
+console.log('==============================================');
+
+// Podemos agregar propiedades de esta manera:
+class Usopropiedades6 {
+    
+    // Usando public:
+    public propNombre: string;
+    public propApellido: string;
+    public propEdad: number;
+    
+    // Sin public:
+    propOcupacion: string;
+    propEstado: string;
+    propVivo: boolean;
+    
+    constructor(nombre: string, apellido: string, edad: number, ocupacion: string, estado: string, isAlive: boolean) {
+        this.propNombre = nombre;
+        this.propApellido = apellido;
+        this.propEdad = edad;
+        this.propOcupacion = ocupacion;
+        this.propEstado = estado;
+        this.propVivo = isAlive;
+    }
+}
+
+// Creamos una instancia:
+const datosUsuario = new Usopropiedades6('Carlitos', 'Madrigal', 23, 'Profesor', 'soltero', true);
+console.log(datosUsuario);
+// Podemos notar que no afecta en nada, aunque nos ayudaria a diferenciar
+// si una propiedad es "private" o "public"
+
+console.log(datosUsuario.propNombre);
+console.log(datosUsuario.propApellido);
+console.log(datosUsuario.propEdad);
+console.log('==============================================');
+
+// Version abreviada de las propiedades:
+class Usopropiedades7 {
+    propPrecio: number;
+    propDisponible: boolean;
+
+    constructor(
+
+        // Aqui Declaramos una propiedad con sus nombres, y le asignamos el valor
+        public propMarca: string,
+        public propEstado: string,
+        private propMatricula: number,
+        
+        // Son solo parametros del constructor, que necesitan propiedades de la clase
+        precio: number,
+        disponible: boolean,
+    ) {
+        this.propPrecio = precio;
+        this.propDisponible = disponible;
+    }
+}
+
+const datosVehiculo = new Usopropiedades7('Totoya', 'Seminuevo', 1235, 14000, true);
+console.log(datosVehiculo);
+
+// Accedemos a las propiedades:
+console.log(datosVehiculo.propMarca);
+console.log(datosVehiculo.propEstado);
+console.log(datosVehiculo.propPrecio);
+console.log(datosVehiculo.propDisponible);
+
