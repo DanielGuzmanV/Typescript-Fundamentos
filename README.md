@@ -48,9 +48,9 @@ CommonJS (module.exports y require)
 - `npm install --save-dev typescript ts-node @types/node`
 (Nos creara una carpeta "node_modules" y un "package.lock.json")
 
-```md
 ## 🔧 Configuracion
 
+```md
 Ahora configuramos el archivo `tsconfig.json` donde agregaremos o descomentaremos los siguiente:
 
 Hay que mencionar que algunos ya estan descomentados
@@ -180,6 +180,10 @@ Pero si queremos que compile automaticamente cada vez que se guarde el archivo .
 ```bash
 tsc --watch
 ```
+Para finalizar el `tsc --watch` en la terminal presionaremos las teclas:
+`Ctrl + c`
+Y si nos sale: Terminate batch job (Y/N)?
+Entonces pondremos "Y" y presionamos enter
 
 ### 6. Consejo final
 
