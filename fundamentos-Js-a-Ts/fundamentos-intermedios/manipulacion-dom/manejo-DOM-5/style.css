@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(224, 237, 238);
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.title {
+    color: red;
+}
+
+.subtitle {
+    color: blue;
+}
+
+hr {
+    height: 2px;
+    color: black;
+    background-color: black;
+}
+
+img {
+    display: block;
+    margin: auto;
+
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+
+    cursor: pointer;
+}
+
+button {
+    margin: 10px;
+}
+
+input {
+    margin: 20px;
+}
+
+.claseOriginDiv{
+    background-color: yellow;
+    padding: 15px;
+    border: 2px solid black;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.claseNuevaDiv {
+    background-color: orangered;
+    font-weight: bolder;
+    color: white;
+    padding: 30px;
+    border: 2px solid blue;
+    margin: 30px;
+}
+
+
+
+

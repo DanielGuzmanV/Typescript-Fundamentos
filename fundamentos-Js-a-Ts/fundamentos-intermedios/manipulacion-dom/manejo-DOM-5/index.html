@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manejo del DOM</title>
+</head>
+<body>
+    <h2 class="title">Modificacion de atributos de elementos</h2>
+    <hr>
+    <!-- ------------------- -->
+
+    <!-- EJEMPLO 1: -->
+    <h3 class="subtitle">Cambiar la imagen</h3>
+    <p>Los elementos del DOM tienen atributos que podemos modificar</p>
+    <button id="btnCambio">Cambiar imagen</button>
+    <img 
+    src="https://img.freepik.com/foto-gratis/campo-verde-sol_1160-878.jpg?semt=ais_hybrid" 
+    alt="Imagen de naturaleza" 
+    id="miImagen1">
+    <hr>
+    <!-- =========================================================== -->
+    
+    
+    <!-- EJEMPLO 2: -->
+    <h3 class="subtitle">Cambiar un enlace</h3>
+    <a href="https://www.bing.com" target="_blank" id="primerEnlace">Visitar el buscador de Bing</a>
+    <br>
+    <button id="btnCambioEnlace">Cambiar enlace</button>
+    <hr>
+    <!-- =========================================================== -->
+    
+    
+    <!-- EJEMPLO 3: -->
+    <h3 class="subtitle">Cambiar el valor de un input</h3>
+    <input id="inputTexto" type="text" value="Texto Original" placeholder="Ingrese un texto...">
+    <button id="btnCambiarInput">Cambiar Texto</button>
+    <hr>
+    <!-- =========================================================== -->
+    
+    
+    <h2 class="title">Manipulacion de atributos</h2>
+    <hr>
+    <!-- EJEMPLO 4: -->
+    <h3 class="subtitle">Cambiar la clase de un elemento</h3>
+    <div id="divElemento" class="claseOriginDiv">Soy un div de ejemplo:</div>
+    <button id="cambiarClase">Cambiar clase</button>
+    <hr>
+    <!-- =========================================================== -->
+    
+    
+    <!-- EJEMPLO 5:  -->
+    <h3 class="subtitle">Cambiar estilos con (.style)</h3>
+    <div id="cajaDiv">Div de estilos</div>
+    <button id="cambiarEstilos">Cambiar estilos</button>
+    <hr>
+    <!-- =========================================================== -->
+    
+    
+    <!-- EJEMPLO 6: -->
+    <h3 class="subtitle">Habilitar y deshabilitar un input</h3>
+    <button id="inputCambio">Habilitar / Deshabilitar</button>
+    <br>
+    <input id="inputText" type="text" value="Texto editable">
+    
+    
+    <!-- =========================================================== -->
+    <script src="./dist/script.js"></script>
+
+</body>
+</html>
