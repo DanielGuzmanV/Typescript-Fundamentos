@@ -1,0 +1,42 @@
+body {
+    background-color: lavenderblush;
+    text-align: center;
+}
+
+.subtitulo {
+    color: blue;
+}
+
+.miParrafo {
+    color: green;
+}
+
+.crearDiv {
+    background-color:cornflowerblue;
+    border: 2px solid black;
+    margin: 40px;
+}
+
+.contentP {
+    border: 2px solid black;
+    margin: 30px;
+    padding: 20px;
+}
+
+.resaltar {
+    color: aqua;
+    font-weight: bold;
+}
+
+.miParrafo {
+    color: orangered;
+}
+
+#miElemento {
+    color:orangered;
+}
+
+
+
+
+
