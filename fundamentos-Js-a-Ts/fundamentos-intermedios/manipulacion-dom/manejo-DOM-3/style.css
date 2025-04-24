@@ -1,0 +1,38 @@
+/* Estilizamos el Body y el Div*/
+
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 20px;
+
+    /* Centramos la caja */
+    margin: auto;
+
+    /* Espacios entre el div y el button  */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.resaltado {
+    background-color: orange;
+    color: red;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
