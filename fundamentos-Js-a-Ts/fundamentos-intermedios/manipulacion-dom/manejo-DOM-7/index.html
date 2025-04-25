@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manipulacion del DOM</title>
+</head>
+<body>
+    <h1 class="title">Diferencias entre innerHTML y textContent</h1>
+    <hr>
+    <!-- EJEMPLO 1: -->
+    <h2 class="subtitle">Cambiar contenido dinamicamente</h2>
+    <button id="botonTexto">Mostrar textos</button>
+    <button id="botonHTML">Mostrar HTML</button>
+    <div id="contenedorDiv"></div>
+    <hr>
+
+
+    <!-- EJEMPLO 2: -->
+    <h2 class="subtitle">Prevenir ataques XSS con textContent</h2>
+    <p>Usamos "textContent":</p>
+    <input type="text" id="entrada" placeholder="Escribe algo">
+    <button id="mostrarTexto">Mostrar</button>
+    <div id="resultadoDiv"></div>
+    <hr>
+
+
+    <!-- EJEMPLO 4: -->
+    <h2 class="subtitle">Cargar contenido dinamico en una lista</h2>
+    <button id="agregarElementos">Agregar elementos</button>
+    <ul id="listaElement"></ul>
+
+
+
+
+    <!-- ============================== -->
+    <script src="./dist/script.js"></script>
+</body>
+</html>
