@@ -1,0 +1,53 @@
+body {
+    background-color: bisque;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: red;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+}
+
+#lista {
+    cursor: pointer;
+}
+
+#divContenedor {
+    margin: 20px;
+}
+
+#miTabla {
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    color: blue;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.space {
+    margin: 10px;
+}
+
+.agregarStl {
+    color: white;
+    margin: 10px;
+    background-color: darkgoldenrod;
+}
+
+.classButtons {
+    background-color: aqua;
+    margin: 15px;
+}
+
+

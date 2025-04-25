@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manipulacion del DOM</title>
+</head>
+<body>
+    <h1>Manejo de eventos en multiples elementos</h1>
+    <hr>
+
+    <!-- EJEMPLO 1: -->
+    <h2 class="subtitle">Delegacion de eventos en botones</h2>
+    <p>Creamos botones que cuando se les de clic nos salga un "alert"</p>
+    <button id="agregar" class="agregarStl">Agregar</button>
+    <div id="divContenedor">Div de ejemplos</div>
+    <hr>
+    <!-- =================================================== -->
+    
+    
+    <!-- EJEMPLO 2: -->
+    <h2 class="subtitle">Delegacion de eventos en una lista de elementos</h2>
+    <button id="agregarElementos">Agregar elementos</button>
+    <ul id="lista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <hr>
+    <!-- =================================================== -->
+    
+    
+    <!-- EJEMPLO 3: -->
+    <h2 class="subtitle">Delegacion de eventos en botones dinamicos</h2>
+    <button id="btnAgregar" class="agregarStl">Agregar botones</button>
+    <div id="contenedorBtn">
+        <button class="btn">Boton 1</button>
+        <br>
+        <button class="btn">Boton 2</button>
+    </div>
+    <hr>
+    <!-- =================================================== -->
+    
+    
+    <!-- EJEMPLO 4 -->
+    <h2 class="subtitle">Delegacion de eventos en formularios</h2>
+    <form id="formulario">
+        <input class="space" type="text" name="name" placeholder="Nombre">
+        <br>
+        <input class="space" type="text" name="email" placeholder="Email">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+    <!-- =================================================== -->
+    
+    
+    <!-- EJEMPLO 5: -->
+    <h2 class="subtitle">Delegacion de eventos para un menu desplegable</h2>
+    <button id="menuBoton">Menu</button>
+    <ul id="menuLista" style="display: none;">
+        <li>Inicio</li>
+        <li>Acerca de</li>
+        <li>Contacto</li>
+    </ul>
+    <hr>
+    <!-- =================================================== -->
+    
+
+    <!-- EJEMPLO 6: -->
+    <h2 class="subtitle">Delegacion de eventos en tablas</h2>
+    <table id="miTabla" border="1">
+        <tr>
+            <td>Fila 1</td>
+        </tr>
+        <tr>
+            <td>Fila 2</td>
+        </tr>
+        <tr>
+            <td>Fila 3</td>
+        </tr>
+    </table>
+
+
+    <!-- ============================== -->
+    <script src="./dist/script.js"></script>
+</body>
+</html>
