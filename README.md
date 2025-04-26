@@ -114,7 +114,8 @@ entre el proyecto general y los subproyectos
   "include": ["fundamentos-Js-a-Ts/**/*"],
   "exclude": [
     "node_modules",
-    "fundamentos-intermedios/manipulacion-dom/manejo-DOM-*"
+    "fundamentos-intermedios/manipulacion-dom/manejo-DOM-*",
+    "fundamentos-intermedios/manipulacion-dom/Ejemplos-uso/**",
   ]
 }
 ```
