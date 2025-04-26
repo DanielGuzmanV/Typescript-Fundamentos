@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejemplos de uso DOM-1</title>
+</head>
+<body>
+    
+    <h1 id="title">Crear y eliminar Elementos dinamicos</h1>
+    <hr>
+
+    <!-- Ejemplo 1: -->
+    <div>
+        <h2 id="subtitle1" class="subtitle">Crear y eliminar despues de un parrafo</h2>
+        <button id="crearParrafo">Crear antes</button>
+        <button id="eliminarParrafo">Eliminar parrafos</button>
+
+        <p class="parrafo1">Se crearan parrafos antes y despues de este parrafo</p>
+    
+        <button id="crearParrafo2">Crear despues</button>
+        <button id="eliminarParrafo2">Eliminar parrafos</button>
+        <hr>
+
+        <!-- ================================================ -->
+
+        <h2 id="subtitle2" class="subtitle">Crear y eliminar dentro de un div</h2>
+        <button id="agregarElem">Agregar elementos</button>
+        <button id="eliminarElem">Eliminar elementos</button>
+
+        <div id="divElementos"></div>
+    
+    </div>
+
+
+
+    <!-- ========================= -->
+    <script src="./dist/script.js"></script>
+</body>
+</html>
