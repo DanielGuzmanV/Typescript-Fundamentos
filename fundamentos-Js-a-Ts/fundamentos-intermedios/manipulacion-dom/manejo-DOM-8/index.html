@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manipulacion del DOM</title>
+</head>
+<body>
+    <!-- EJEMPLO 1: -->
+    <h2 class="title">Event Bubbling</h2>
+    <div id="idPadre">
+        <button id="idHijo">Haz clic aqui</button>
+    </div>
+    <hr>
+
+
+    <!-- EJEMPLO 2: -->
+    <h2 class="title">Event Capturing</h2>
+    <div id="divPadre">
+        <button id="btnHijo">Haz clic aqui</button>
+    </div>
+    <hr>
+
+
+    <!-- EJEMPLO 3: -->
+    <h2 class="title">Observer API (Mutacion del DOM)</h2>
+    <button id="btnCrear">Crear parrafos</button>
+    <div id="contenedor">
+        <p>Este es un parrafo de ejemplo</p>
+    </div>
+    <hr>
+
+
+    <!-- EJEMPLO 4: -->
+    <h2 class="title">ClassList avanzado (toggle y replace)</h2>
+    <button id="toggleBtn">Alternar clase</button>
+    <button id="replaceBtn">Reemplazar clase</button>
+    <div id="miElemento" class="claseDiv1"></div>
+    <hr>
+
+
+    <!-- EJEMPLO 5: -->
+    <h2 class="title">Storage en el navegador (LocalStorage)</h2>
+    <input type="text" id="entradaValue1" placeholder="Ingrese la clave">
+    <input type="text" id="entradaValue2" placeholder="Ingrese el valor">
+    <br>
+    <button id="guardarLocal">Guardar en localStorage</button>
+    <button id="leerLocal">Leer de localStorage</button>
+    <button id="limpiarLocal">Limpiar</button>
+    <hr>
+
+
+    <!-- EJEMPLO 6: -->
+    <h2 class="title">Storage en el navegador (SessionStorage)</h2>
+    <input type="text" id="entradaValor1" placeholder="Ingrese la clave">
+    <input type="text" id="entradaValor2" placeholder="Ingrese el valor">
+    <br>
+    <button id="guardarSession">Guardar en sessionStorage</button>
+    <br>
+    <button id="leerSession">Leer de sessionStorage</button>
+    <br>
+    <button id="limpiarSession">Limpiar</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================= -->
+    <script src="./dist/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    background-color: azure;
+    padding: 20px 50px 80px;
+    border: 2px solid black;
+    margin:50px;
+}
+
+hr {
+    width: 50%;
+    margin: 30px auto;
+    border: 2px solid black;
+}
+
+div {
+    padding: 30px;
+    border: 2px solid red;
+}
+
+input {
+    margin: 10px;
+}
+
+button {
+    margin: 20px;
+    padding: 10px;
+}
+
+.title {
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
