@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Template y Cloning</h1>
+    <p>Los tamplates y cloning permiten reutilizar estructuras sin reescribir codigo</p>
+    <div class="divTitle">
+        <h3 style="margin: 0px;">Tamplate</h3>
+        <p>Es un contenedor invisible en HTML que no renderiza hasta que lo usamos</p>
+        
+        <h3 style="margin: 0px;">CloneNode</h3>
+        <p>Se usa para copiar estructuras <br> HTML existentes y reutilizables</p>
+    </div>
+
+    <!-- ======================================== -->
+    <div class="containerMain">
+        <div class="containerLeft">
+            <h2 class="subtitle">Usando Tamplate y CloneNode</h2>
+            <h3>Con cloneNode</h3>
+
+            <button id="addItems2">Agregar Estructura</button>
+
+            <div id="divContainer2">
+                <template id="myTemplate">
+                    <div class="myCard">
+                        <h3 class="myTitle"></h3>
+                        <p class="description"></p>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+        <!--================================================= -->
+
+        <div class="containerRight">
+            <h2 class="subtitle">Sin Template y CloneNode</h2>
+            <h3>Sin cloneNode</h3>
+            <button id="addItems">Agregar Estructura</button>
+
+            <div id="divContainer"></div>
+        </div>
+    </div>
+
+
+    <!-- ======================== -->
+    <script src="./dist/script.js"></script>
+
+</body>
+</html>

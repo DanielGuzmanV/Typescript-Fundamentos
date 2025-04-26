@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(173, 213, 217);
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+    border: 2px solid black;
+}
+
+.title {
+    color: red;
+}
+
+.subtitle {
+    color: blue;
+}
+
+.divTitle {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 40px;
+}
+
+.containerMain {
+    display: flex;
+
+    /* Pondremos espacio entre los divs */
+    justify-content: space-between;
+
+    /* Igualamos la altura en ambos divs */
+    align-items: stretch;
+
+    /* Ponemos un espacio entre los divs */
+    gap: 20px;
+}
+
+.containerLeft, .containerRight {
+    width: 50%;
+    border: 2px solid black;
+    padding: 20px;
+
+    /* Evitamos que el padding afecte el tamaño */
+    box-sizing: border-box;
+
+    /* Centramos los elementos */
+    display: flex;
+
+    /* Ajustamos los elementos en columna */
+    flex-direction: column;
+
+    /* Centramos los elementos horizontalmente */
+    align-items: center;
+
+    /* Centramos los textos */
+    text-align: center;
+
+}
+
+.containerLeft{
+    text-align: left;
+}
+.containerRight {
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
