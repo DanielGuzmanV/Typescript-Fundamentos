@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejemplos de uso DOM-3</title>
+</head>
+<body>
+    <h1 class="title">Ejemplo Event Bubbling y Capturing</h1>
+
+    <h2 class="subtitle">Menu desplegable con propagacion de eventos</h2>
+    <button id="menuBtn">Abrir menu</button>
+    <div id="menuList" class="hidden">
+        <ul>
+            <li>Notas principales</li>
+            <li>Notas pasadas</li>
+            <li>Practicos</li>
+        </ul>
+    </div>
+
+    <hr class="separador">
+
+    <h2 class="subtitle">Capturar clics en una lista dinamica</h2>
+    <h3>Lista de tareas</h3>
+    <ul id="listaTareas">
+        <li>Tarea 1</li>
+        <li>Tarea 2</li>
+        <li>Tarea 3</li>
+    </ul>
+    <button id="agregarTareas">Agregar tareas</button>
+    <hr class="separador">
+
+    <!-- ============================== -->
+    <script src="./dist/script.js"></script>
+</body>
+</html>

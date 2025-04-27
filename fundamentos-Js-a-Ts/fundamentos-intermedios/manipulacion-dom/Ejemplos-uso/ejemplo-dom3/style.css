@@ -1,0 +1,35 @@
+body {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 50px;
+}
+
+button {
+    margin: 20px;
+}
+
+.title {
+    color: red;
+}
+
+.subtitle {
+    color: blue;
+}
+
+.separador{
+    width: 50%;
+    border: 2px solid black;
+}
+
+.hidden {
+    display: none;
+}
+
+#menuList {
+    background-color:darkkhaki;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+
