@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    background-color: rgb(127, 173, 158);
+    padding: 50px;
+}
+
+.title {
+    color: red;
+}
+
+.subtitle {
+    color: blue;
+}
+
+
+
+

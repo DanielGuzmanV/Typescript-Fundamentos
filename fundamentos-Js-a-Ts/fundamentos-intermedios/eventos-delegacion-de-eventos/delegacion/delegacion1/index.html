@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Delegacion de eventos</title>
+</head>
+<body>
+    <h1 class="title">Delegacion de Eventos</h1>
+
+    <!-- EJEMPLO 1: -->
+    <div class="contentDiv">
+        <h2 class="subtitle">Un solo evento al elemento padre</h2>
+
+        <div id="contenedor">
+            <button class="btn">Boton1</button>
+            <button class="btn">Boton2</button>
+        </div>
+    </div>
+    <hr>
+
+    <!-- EJEMPLO 2: -->
+    <div class="contentDiv">
+        <h2 class="subtitle">Lista de tarea dinamica</h2>
+        <button id="addTarea">Agregar Tareas</button>
+
+        <ul id="listaTareas">
+            <li>Tarea 1</li>
+            <li>Tarea 2</li>
+        </ul>
+    </div>
+    <hr>
+
+    <!-- EJEMPLO 3: -->
+    <div>
+        <h2 class="subtitle">Delegacion en formularios</h2>
+
+        <form id="miFormulario">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="email" name="email" placeholder="Email">
+        </form>
+    </div>
+
+    <!-- ====================================== -->
+    <script src="./dist/script.js"></script>
+</body>
+</html>
