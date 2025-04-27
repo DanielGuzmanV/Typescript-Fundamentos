@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejemplo de uso DOM-4</title>
+</head>
+<body>
+    <h1 class="title"><i>Observe API (Mutacion del DOM)</i></h1>
+    <div class="contenedor">
+        <h2 class="subtitle">Modificar si se agrega producto al carrito</h2>
+        <h3>Carrito de compras</h3>
+        <ul id="listaCarrito"></ul>
+        <button id="btnAgregar">Agregar productos</button>
+    </div>
+
+    <!-- =============================================== -->
+
+    <div class="contenedor">
+        <h2 class="subtitle">Detectar cambios de un div en tiempo real</h2>
+        <h3>Editor en vivo</h3>
+        <div id="editorDiv" contenteditable="true"></div>
+        <b>
+            <p id="mensaje" style="color: orangered;"></p>
+        </b>
+    </div>
+
+    <!-- ===================================== -->
+    <script src="./dist/script.js"></script>
+</body>
+</html>
