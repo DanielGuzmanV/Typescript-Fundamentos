@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eventos</title>
+</head>
+<body>
+    <h1 class="title">Eventos Avanzados</h1>
+
+    <!-- EJEMPLO 1: -->
+    <h2 class="subtitle">Eventos del teclado</h2>
+    
+    <p>Evitamos que se escriba caracteres que no sean numeros</p>
+    <input type="text" id="numbers" placeholder="Escribe numeros">
+
+    <h2 class="subtitle">Mas ejemplos:</h2>
+    <!-- Ejemplo 1.1 -->
+    <h3>Detectar cuando se presiona enter</h3>
+    <input type="text" id="inputTexto" placeholder="Escribe y presiona enter">
+    <p id="mensaje"></p>
+
+    <!-- Ejemplo 1.2 -->
+    <h3>Detectar cuando la ultima tecla es soltada</h3>
+    <input type="text" id="inputKeyUp" placeholder="Escribe algo">
+    <p id="mensajeKeyUp"></p>
+    <hr>
+
+    <!-- EJEMPLO 2: -->
+    <h2 class="subtitle">Eventos del raton</h2>
+
+    <p>Cambiara el color del boton cuando se pase por el boton</p>
+    <button id="btnHover">Pasa el mouse por aqui</button>
+    
+    <h2 class="subtitle">Mas ejemplos:</h2>
+    <!-- Ejemplo 2.1 -->
+    <h3>Detectar un clic en un boton</h3>
+    <button id="btnClick">Haz clic aqui</button>
+
+    <!-- Ejemplo 2.2 -->
+    <h3>Detectar doble clic en un div</h3>
+    <div id="caja" style="width: 100px; height: 100px; background-color: darkslateblue;"></div>
+
+    <!-- Ejemplo 2.3 -->
+    <h3>Evitar el menu contextual</h3>
+    <p id="texto">Haz clic derecho aqui</p>
+
+    <!-- Ejemplo 2.4 -->
+    <h3>Mostrar coordenadas del mouse</h3>
+    <p id="coordenadas">Mueve el mouse</p>
+    <hr>
+
+    <!-- EJEMPLO 3: -->
+    <h2 class="subtitle">Personalizacion de eventos</h2>
+    <p>Evento personalizado llamado "Saludar", mostrara un mensaje por consola y alert</p>
+    <button id="btnSaludar">Disparar eventos</button>
+
+    <!-- ======================================== -->
+    <script src="./dist/script.js"></script>
+</body>
+</html>
