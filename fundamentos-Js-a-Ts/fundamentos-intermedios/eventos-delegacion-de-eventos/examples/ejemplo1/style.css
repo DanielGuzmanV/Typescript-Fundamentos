@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    background-color: rgb(204, 232, 163);
+    align-items: center;
+    padding: 40px;
+    margin: 20px 50px 40px;
+}
+
+hr {
+    width: 80%;
+    border: 2px solid black;
+}
+
+.title {
+    color: red;
+}
+.subtitle {
+    color: blue;
+}
+.contenedor {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 30px;
+}
+
+#cajaDiv {
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+
+
+

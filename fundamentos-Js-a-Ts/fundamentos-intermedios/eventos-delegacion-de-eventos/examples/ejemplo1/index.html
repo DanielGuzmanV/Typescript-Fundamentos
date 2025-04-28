@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejemplo eventos y delegacion de eventos</title>
+</head>
+<body>
+    <h1 class="title">Eventos y Delegacion</h1>
+    
+    <!-- EJEMPLO 1 -->
+    <div class="contenedor">
+        <h2 class="subtitle">Eventos del teclado</h2>
+        <h3>Detectar si el usuario escribe un numero o una letra</h3>
+        <input type="text" id="inputText" placeholder="Escribe algo">
+        <p id="result"></p>
+        <hr>
+        <h3>bloquear la tecla "e" en un input numero</h3>
+        <input type="text" id="inputBloquear" placeholder="Ingresa un numero">
+    </div>
+
+    <!-- EJEMPLO 2 -->
+    <div class="contenedor">
+        <h2 class="subtitle">Eventos del rato</h2>
+        <h3>Contador de clics con boton derecho</h3>
+        <button id="btnDerecho">Haz clic derecho</button>
+        <p id="counterClics">Clics: 0</p>
+        <hr>
+        <h3>Cambiar color de fondo al pasar el mouse</h3>
+        <div id="cajaDiv"></div>
+    </div>
+
+    <!-- EJEMPLO 3 -->
+    <div class="contenedor">
+        <h2 class="subtitle">Eventos personalizados</h2>
+        <h3>Evento al alcanzar un numero de clics</h3>
+        <button id="btnContador">Haz clic</button>
+        <p id="mensaje"></p>
+        <hr>
+        <h3>Evento personalizado con datos dinamicos</h3>
+        <button id="btnEvento">Enviar eventos</button>
+        <p id="eventoResult"></p>
+    </div>
+
+    <!-- ===================================== -->
+    <script src="./dist/script.js"></script>
+</body>
+</html>
