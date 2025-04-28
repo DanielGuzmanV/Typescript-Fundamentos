@@ -1,7 +1,7 @@
 // ASYNC - AWAIT (Mas moderno y claro)
 // Ejemplo 1:
 // Codigo mas limpio y facil de leer, evitamos la anidacion de ".then()"
-function descargarArchivo(url: string) {
+function descargarArchivo(url: string): Promise <string> {
     return new Promise( function(resolve, reject) {
 
         setTimeout( () => {
@@ -15,7 +15,7 @@ function descargarArchivo(url: string) {
     })
 }
 
-async function procesoDescarga() {
+async function procesoDescarga(): Promise<void> {
     try {
         
         console.log('Iniciando la descarga...');
@@ -37,7 +37,7 @@ procesoDescarga();
 
 // Ejemplo 2:
 // Manejo de errores con try catch
-async function obtenerDatos() {
+async function obtenerDatos(): Promise<void> {
     try {
         
         let response = await fetch('https://jsonplaceholder.typicode.com/users?_limit=2');
