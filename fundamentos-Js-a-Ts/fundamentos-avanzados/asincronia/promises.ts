@@ -3,7 +3,7 @@
 // es mejor que los callbacks
 
 // Ejemplo 1:
-function descargarArchivo2(url: string) {
+function descargarArchivo2(url: string): Promise <string> {
     return new Promise( function(resolve, reject) {
         console.log('Descargando archivo...');
 
