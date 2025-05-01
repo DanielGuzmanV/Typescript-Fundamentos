@@ -113,7 +113,10 @@
   "ts-node": {
     "files": true
   },
-  "include": ["fundamentos-Js-a-Ts/**/*"],
+  "include": [
+    "fundamentos-Js-a-Ts/**/*",
+    "fundamentos-lenguaje-con-tipos/**/*"
+  ],
   "exclude": [
     "node_modules",
     "fundamentos-intermedios/manipulacion-dom/manejo-DOM-*",

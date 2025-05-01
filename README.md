@@ -57,7 +57,7 @@ Hay que mencionar que algunos ya estan descomentados
 {
   "compilerOptions": {
 
-    "target": "ES2016", // Podemos cambiarlo al año que se requiera "ES2020"
+    "target": "ES2020", // Podemos cambiarlo al año que se requiera
     "module": "CommonJS",
     "strict": true,
     "esModuleInterop": true,
@@ -67,10 +67,19 @@ Hay que mencionar que algunos ya estan descomentados
   "ts-node": {
     "files": true
   },
-  "include": ["fundamentos-Js-a-Ts/**/*"]
+  "include": [
+    "fundamentos-Js-a-Ts/**/*",
+    "fundamentos-lenguaje-con-tipos/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "fundamentos-intermedios/manipulacion-dom/manejo-DOM-*",
+    "fundamentos-intermedios/manipulacion-dom/Ejemplos-uso/**",
+    "fundamentos-intermedios/eventos-delegacion-de-eventos/**",
+  ]
 }
 
-  Nota: "ts-node" y "include" no se encuentra asi que tendremos que agregarlo de forma manual.
+  Nota: "ts-node", "include" y "exclude" no se encuentra asi que tendremos que agregarlo de forma manual.
   "include" es para que vea donde estan ubicados los modulos
 ```
 
