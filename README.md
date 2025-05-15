@@ -69,7 +69,8 @@ Hay que mencionar que algunos ya estan descomentados
   },
   "include": [
     "fundamentos-Js-a-Ts/**/*",
-    "fundamentos-lenguaje-con-tipos/**/*"
+    "fundamentos-lenguaje-con-tipos/**/*",
+    "poo-estructura-fuerte/**/*"
   ],
   "exclude": [
     "node_modules",
