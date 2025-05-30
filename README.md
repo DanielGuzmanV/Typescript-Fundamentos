@@ -134,7 +134,7 @@ entre el proyecto general y los subproyectos
     "fundamentos-intermedios/manipulacion-dom/manejo-DOM-*",
     "fundamentos-intermedios/manipulacion-dom/Ejemplos-uso/**",
     "fundamentos-intermedios/eventos-delegacion-de-eventos/**",
-    "ejemplos/DOM/**/*"
+    "ejemplos/DOM/ejemplo-*"
   ]
 }
 ```
