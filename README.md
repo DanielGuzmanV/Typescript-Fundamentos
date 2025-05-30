@@ -70,13 +70,15 @@ Hay que mencionar que algunos ya estan descomentados
   "include": [
     "fundamentos-Js-a-Ts/**/*",
     "fundamentos-lenguaje-con-tipos/**/*",
-    "poo-estructura-fuerte/**/*"
+    "poo-estructura-fuerte/**/*",
+    "tipos-avanzados/**/*"
   ],
   "exclude": [
     "node_modules",
     "fundamentos-intermedios/manipulacion-dom/manejo-DOM-*",
     "fundamentos-intermedios/manipulacion-dom/Ejemplos-uso/**",
     "fundamentos-intermedios/eventos-delegacion-de-eventos/**",
+    "ejemplos/DOM/**/*"
   ]
 }
 
@@ -121,12 +123,18 @@ entre el proyecto general y los subproyectos
   "ts-node": {
     "files": true
   },
-  "include": ["fundamentos-Js-a-Ts/**/*"],
+  "include": [
+    "fundamentos-Js-a-Ts/**/*",
+    "fundamentos-lenguaje-con-tipos/**/*",
+    "poo-estructura-fuerte/**/*",
+    "tipos-avanzados/**/*"
+  ],
   "exclude": [
     "node_modules",
     "fundamentos-intermedios/manipulacion-dom/manejo-DOM-*",
     "fundamentos-intermedios/manipulacion-dom/Ejemplos-uso/**",
     "fundamentos-intermedios/eventos-delegacion-de-eventos/**",
+    "ejemplos/DOM/**/*"
   ]
 }
 ```
