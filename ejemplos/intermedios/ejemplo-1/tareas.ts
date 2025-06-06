@@ -1,8 +1,10 @@
 // Ejemplo 1 - Gestor de tareas
+// Que hara el codigo:
 // - Definir una clase Tarea con titylo y estado
 // - Definir un gestor de tareas para agregar, listar y completar
 // - Usar spread/rest para agregar multiples tareas de una vez
 // - Capturar errores si se intenta crear tareas sin titulo
+// - Usamos modulos con ESM para exportar e importar
 
 // ______________________________________________
 // Clase para las tareas:
