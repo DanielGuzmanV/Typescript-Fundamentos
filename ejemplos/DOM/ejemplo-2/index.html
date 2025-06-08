@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Task Manager</title>
+</head>
+<body>
+  <div>
+
+    <h1>Gestor de Tareas</h1>
+
+    <form id="form-tarea">
+      <input type="text" id="input-tarea" placeholder="Escribe una tarea"/>
+      <button id="btn-agregar">Agregar</button>
+    </form>
+
+    <!-- Tareas agregadas: -->
+    <div id="content-addtaks">
+      <h2>Tareas: </h2>
+      <ul id="list-addTask"></ul>
+    </div>
+
+    <!-- Tareas completadas: -->
+    <div id="content-completedTask">
+      <h2>Tareas completadas: </h2>
+      <ul id="list-completedTask"></ul>
+    </div>
+
+  </div>
+
+  <script src="dist/main.js"></script>
+</body>
+</html>
