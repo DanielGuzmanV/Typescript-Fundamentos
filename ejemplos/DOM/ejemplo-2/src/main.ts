@@ -26,18 +26,26 @@ function agregarTareas(event: SubmitEvent) {
   }
 
   const valueLi = document.createElement('li');
+  valueLi.className = "flex justify-between items-center gap-2 p-2 bg-gray-100 rounded-lg hover:scale-[1.02] hover:bg-gray-200 transition-transform duration-200 ease-in-out";
+
   const valueContentDiv = document.createElement('div');
+  valueContentDiv.className = "p-4 flex-grow break-words"
+
   const valueSpan = document.createElement('span');
   valueSpan.textContent = tareas;
 
   const btnEliminar = document.createElement('button');
   btnEliminar.textContent = 'Eliminar';
+  btnEliminar.className = "bg-blue-600 hover:bg-red-600 text-white px-4 py-2 rounded-lg text-sm";
+
   btnEliminar.addEventListener('click', () => {
     listaAgregados.removeChild(valueLi)
   })
 
   const btnAgregar = document.createElement('button');
   btnAgregar.textContent = 'Agregar';
+  btnAgregar.className = "bg-blue-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm";
+
   btnAgregar.addEventListener('click', () => {
     tareasCompletadas(tareas)
     listaAgregados.removeChild(valueLi);
@@ -56,6 +64,8 @@ function agregarTareas(event: SubmitEvent) {
 function tareasCompletadas(tarea: string) {
   const valueLi = document.createElement('li');
   valueLi.textContent = tarea;
+  valueLi.className = "p-3 bg-green-100 rounded-lg text-gray-800 hover:bg-green-200 transition-all";
+
   listaCompletados.appendChild(valueLi);
 }
 
