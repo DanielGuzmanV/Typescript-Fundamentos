@@ -224,3 +224,107 @@ Con esto cada codigo que escribamos en `script.ts` ira direcamente a la ubicacio
 - Cada carpeta `manejo-DOM-x` tendra su propio `tsconfig.json`
 - El archivo tsconfig.json global debe excluirlas para evitar errores y conflictos 
   de compilacion en el proyecto general (cosa que ya hicimos en el punto 1)
+
+---
+## Instalacion de tailwindCSS v3 en un carpeta local
+
+### 1.- Estructura
+Primero iremos a la carpeta local donde queremos instalar tailwind y crearemos los siguientes archivos y carpetas:
+
+```bash
+ejemplo-carpeta-local/
+├── src/
+│   └── main.ts
+├── dist/
+│   └── main.js
+├── index.html
+├── tsconfig.json
+```
+
+### 2.- Instalacion de Tailwind CSS v3
+
+Nos ubicamos en: ejemplo-carpeta-local y luego en la terminal ejecutamos:
+
+```bash
+npm init -y
+```
+Donde agregara un archivo `package.json`.
+
+Luego ejecutamos el siguiente codigo en la terminal:
+```bash
+npm install -D tailwindcss@3.3.3 postcss autoprefixer
+```
+Esto nos instalara `node_modules` y `package-lock.json`
+
+### 3.- Inicializacion y configuracion:
+
+1. Iniciamos tailwind
+Verificamos que sigamos ubicados en **ejemplo-carpeta-local** y en la terminal pondremos:
+
+```bash
+npm tailwindcss init -p
+```
+Esto nos creara dos archivos:
+- tailwind.config.js
+- postcss.config.js
+
+
+2. Editamos tailwind.config.js
+Nos aseguramos que el bloque `content` apunte a todos los HTML y archivos `.ts` relevantes
+
+```js
+module.exports = {
+  content: ["./**/*.html", "./**/*.ts"], // Busca clases en HTML y TypeScript en todas las carpetas
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+
+3. Archivo de entrada 'input.css'
+Creamos un archivo `input.css` y pondremos lo siguiente:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+
+4. Script en 'package.json'
+Agregamos este script para compilar tailwind en package.json que tenemos localmente
+
+```json
+"scripts": {
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+}
+```
+Luego en la consola compremos `npm run build:css`
+Aqui tailwind empezara a escuchar los cambios y generara el archivo `output.css`
+
+
+5. Enlazamos el output.css a nuestro HTML
+modificamos el <head> asi:
+```html
+<link rel="stylesheet" href="output.css" />
+```
+Y probamos si todo esta correcto en una etiqueta <h1>
+```html
+<h1 class="text-3xl font-bold text-blue-500">¡Tailwind funciona!</h1>
+```
+
+
+#### Nota:
+Posible error y solucion:
+```bash
+warn - No utility classes were detected...
+```
+Primeramente nos aseguramos de que `content` en `tailwind.config.js` incluya todas las rutas necesarias ` (./**/*.html, ./**/*.ts, etc.)`
+
+
+---
