@@ -258,18 +258,18 @@ Esto nos instalara `node_modules` y `package-lock.json`
 
 ### 3.- Inicializacion y configuracion:
 
-1. Iniciamos tailwind
-Verificamos que sigamos ubicados en **ejemplo-carpeta-local** y en la terminal pondremos:
+1. **Iniciamos tailwind:**
+Verificamos que sigamos ubicados en *ejemplo-carpeta-local* y en la terminal pondremos:
 
 ```bash
-npm tailwindcss init -p
+npx tailwindcss init -p
 ```
 Esto nos creara dos archivos:
 - tailwind.config.js
 - postcss.config.js
 
 
-2. Editamos tailwind.config.js
+2. **Editamos tailwind.config.js:**
 Nos aseguramos que el bloque `content` apunte a todos los HTML y archivos `.ts` relevantes
 
 ```js
@@ -283,7 +283,7 @@ module.exports = {
 ```
 
 
-3. Archivo de entrada 'input.css'
+3. **Archivo de entrada 'input.css':**
 Creamos un archivo `input.css` y pondremos lo siguiente:
 
 ```css
@@ -293,7 +293,7 @@ Creamos un archivo `input.css` y pondremos lo siguiente:
 ```
 
 
-4. Script en 'package.json'
+4. **Script en 'package.json':**
 Agregamos este script para compilar tailwind en package.json que tenemos localmente
 
 ```json
@@ -308,7 +308,7 @@ Luego en la consola compremos `npm run build:css`
 Aqui tailwind empezara a escuchar los cambios y generara el archivo `output.css`
 
 
-5. Enlazamos el output.css a nuestro HTML
+5. **Enlazamos el output.css a nuestro HTML:**
 modificamos el <head> asi:
 ```html
 <link rel="stylesheet" href="output.css" />
