@@ -94,7 +94,7 @@ class ClaseAdmin extends ClaseUsuario {
     }
 }
 // Creamos una funcion:
-function mostrarInfo(persona: ClaseUsuario) {
+function mostrarInfoUser(persona: ClaseUsuario) {
     persona.saludar();
     if(persona instanceof ClaseAdmin) {
         console.log('Es un Admin:');
@@ -107,9 +107,9 @@ function mostrarInfo(persona: ClaseUsuario) {
 const tipoUser = new ClaseUsuario('Marco');
 const tipoAdmin = new ClaseAdmin('Alberto');
 // Realizamos pruebas con la funcion:
-mostrarInfo(tipoUser);
+mostrarInfoUser(tipoUser);
 console.log('----------------------');
-mostrarInfo(tipoAdmin);
+mostrarInfoUser(tipoAdmin);
 // Instanceof: nos sirve para saber si un objeto es una instancia de
 // una clase o constructor especifico
 
