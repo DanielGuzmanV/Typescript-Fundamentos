@@ -1,8 +1,8 @@
 // ** Acceso y modificación básica **
 // 1. Crear y Agregar Elementos (push, unshift, spread)
 
-import { MOCK_PROJECTS } from "../../../../MOCKS/projects.mocks";
-import { TeamMember } from "../../../../types/project.types";
+import { MOCK_PROJECTS } from "../../../MOCKS/projects.mocks";
+import { TeamMember } from "../../../types/project.types";
 
 const proyectoActual = MOCK_PROJECTS[0];
 
