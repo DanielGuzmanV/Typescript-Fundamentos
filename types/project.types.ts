@@ -1,5 +1,3 @@
-// project.types.ts
-
 // Tipos base para enumeraciones
 export type TaskStatus = 'TO_DO' | 'IN_PROGRESS' | 'COMPLETED' | 'BLOCKED';
 export type ProjectPriority = 'HIGH' | 'MEDIUM' | 'LOW';
@@ -18,7 +16,7 @@ export interface Task {
   description: string;
   status: TaskStatus;
   priority: ProjectPriority;
-  assignedTo: TeamMember[]; // 🎯 ARRAY de OBJETOS (asignada a varios miembros)
+  assignedTo: TeamMember[];
   estimatedHours: number;
 }
 
@@ -29,17 +27,16 @@ export interface Project {
   description: string;
   priority: ProjectPriority;
   isActive: boolean;
-  startDate: string; // 'YYYY-MM-DD'
-  dueDate: string;   // 'YYYY-MM-DD'
-  client: { // 🎯 OBJETO dentro del objeto Project
+  startDate: string;
+  dueDate: string;  
+  client: {
     clientName: string;
     contactEmail: string;
   };
-  team: TeamMember[]; // 🎯 ARRAY de OBJETOS (miembros del equipo)
-  // 🎯 ARRAY de OBJETOS anidado: la parte más compleja
+  team: TeamMember[];
   stages: {
     stageName: string;
-    stageProgress: number; // Porcentaje de completado
-    tasks: Task[]; // 🎯 ARRAY de OBJETOS (la lista de tareas de esa etapa)
+    stageProgress: number;
+    tasks: Task[];
   }[];
 }
