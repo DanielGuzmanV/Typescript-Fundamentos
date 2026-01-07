@@ -115,9 +115,9 @@
   },
   "include": [
     "fundamentos-Js-a-Ts/**/*",
-    "fundamentos-lenguaje-con-tipos/**/*",
-    "poo-estructura-fuerte/**/*",
-    "tipos-avanzados/**/*"
+    "fundamentos-Js-a-Ts/lenguaje-con-tipos/**/*",
+    "fundamentos-Js-a-Ts/poo-estructura-fuerte/**/*",
+    "fundamentos-Js-a-Ts/tipos-avanzados/**/*"
   ],
   "exclude": [
     "node_modules",

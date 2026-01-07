@@ -6,8 +6,8 @@
 // Cada stage contiene un Array de Tareas: tasks[].
 // Necesitamos "aplanar" esta estructura de tres niveles (Project -> Stage -> Task) hasta conseguir un simple array de Task[].
 
-import { MOCK_PROJECTS } from "../../../../MOCKS/projects.mocks";
-import { Task } from "../../../../types/project.types";
+import { MOCK_PROJECTS } from "../../../MOCKS/projects.mocks";
+import { Task } from "../../../types/project.types";
 
 // Solución 1: Usando flatMap (La forma moderna y eficiente)
 const tareasPendientes = MOCK_PROJECTS
