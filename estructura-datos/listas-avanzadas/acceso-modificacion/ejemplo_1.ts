@@ -2,7 +2,7 @@
 // 1. Crear y Agregar Elementos (push, unshift, spread)
 
 import { MOCK_PROJECTS } from "../../../MOCKS/projects.mocks";
-import { TeamMember } from "../../../types/project.types";
+import { Project, Task, TeamMember } from "../../../types/project.types";
 
 const proyectoActual = MOCK_PROJECTS[0];
 
@@ -116,14 +116,57 @@ console.log('Push condicional')
 addTaskToProject('P-001', NEW_TASK)
 const newValueTaskData = proyectoActual.stages
 console.log(newValueTaskData);
+console.log('=========================================');
 // ===================================================================
 
 
 // B. unshift() (Añadir al Principio)
-// Concepto: Añade uno o más elementos al principio del array original. Devuelve la nueva longitud.
-// Caso de Uso Práctico: Se crea un nuevo proyecto de prioridad crítica y debe aparecer de primero en la lista general.
+// Ejemplo 1: agregar un nuevo proyecto al principio
+const proyectoCritico: Project = {
+  projectId: 'P-004', 
+  name: 'Parche de Seguridad Crítico',
+  description: 'Realizar el parche lo mas antes posible',
+  priority: 'HIGH', 
+  isActive: true, 
+  startDate: '2025-12-10', 
+  dueDate: '2025-12-15', 
+  client: { clientName: 'Emergencia', contactEmail: '' },
+  team: [{ id: 'u1', name: 'Ana Rodríguez', role: 'Manager' }],
+  stages: []
+}
+console.log("\n--- Antes de unshift ---");
+console.log(`Primer proyecto: ${MOCK_PROJECTS[0].name}`);
+console.log(`Total de proyectos: ${MOCK_PROJECTS.length}`)
 
+MOCK_PROJECTS.unshift(proyectoCritico);
+console.log("\n--- Despues de unshift ---");
+console.log(`Primer proyecto: ${MOCK_PROJECTS[0].name}`);
+console.log(`Total de proyectos: ${MOCK_PROJECTS.length}`)
+console.log('=========================================');
 
+// Ejemplo 2: tareas bloqueantes o urgentes
+const etapaFrontend = MOCK_PROJECTS[1].stages[1];
+const URGENT_BUG: Task = {
+  id: 't-911', 
+  title: 'CRITICAL: Fuga de datos en QR', 
+  status: 'TO_DO', 
+  priority: 'HIGH', 
+  estimatedHours: 2,
+  assignedTo: [], 
+  description: 'Se filtran tokens en la consola'
+}
+console.log('\n--- Ejemplo Intermedio: Bug Urgente ---');
+console.log(`La primera tarea antes es: ${etapaFrontend.tasks[0].title}`);
 
+etapaFrontend.tasks.unshift(URGENT_BUG)
+console.log(`La primera tarea ahora es: ${etapaFrontend.tasks[0].title}`);
+console.log('=========================================');
 
+// Ejemplo 3: sistema de vistos recientemente:
+const proyectoAbierto = MOCK_PROJECTS[3];
+const proyectoCopia = {...proyectoAbierto};
+
+MOCK_PROJECTS.unshift(proyectoCopia);
+console.log('\n--- Ejemplo Avanzado: Proyectos Recientes ---');
+console.log(`El proyecto en la cima de la lista es: ${MOCK_PROJECTS[0].name}`);
 
