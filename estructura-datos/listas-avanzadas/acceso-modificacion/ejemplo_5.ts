@@ -81,8 +81,16 @@ const listaPersonas = ['Persona A', 'Persona C'];
 console.log(`Lista de peronas: ${listaPersonas.join(', ')}`)
 
 // Ir al indice 1, quitar 0 elementos y poner a 'Persona B'
-const insertarPersona = listaPersonas.splice(1, 0, 'Persona B');
+listaPersonas.splice(1, 0, 'Persona B');
 console.log(`Lista de personas actualizada: ${listaPersonas.join(', ')}`)
+console.log('===========================================');
 
+// Ejemplo 4: MOver un elemento de una posicion a otra
+const listaTareas = ['Tarea A', 'Tarea B', 'Tarea C'];
+console.log('Lista de tareas: ' + listaTareas.join(', '))
 
+const tareaMovida = listaTareas.splice(2, 1)[0];
+console.log(`Tarea removida: ${tareaMovida}`)
 
+listaTareas.splice(0, 0, tareaMovida)
+console.log(`Lista de tareas cambiada: ${listaTareas.join(', ')}`)
